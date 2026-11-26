@@ -74,17 +74,7 @@ function renderCalendar() {
   }
 }
 
-    dayCell.addEventListener('click', () => {
-      const idx = current.activeDays.indexOf(d);
-      if (idx > -1) {
-        current.activeDays.splice(idx, 1);
-      } else {
-        current.activeDays.push(d);
-        current.activeDays.sort((a, b) => a - b);
-      }
-      renderCalendar();
-      renderVisitLogs();
-    });
+   
 
     grid.appendChild(dayCell);
   }
